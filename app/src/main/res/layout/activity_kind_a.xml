@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg"
+    tools:context=".AKindActivity">
+
+
+
+    <Button
+        android:id="@+id/b_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="备注"
+        app:layout_marginLeftPercent="88%"
+        app:layout_marginTopPercent="17%"
+        android:background="#70ffffff"
+        app:layout_widthPercent="9%"
+        app:layout_heightPercent="9%"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:text="火灾场所灭火器配置数量计算"
+        android:textColor="#000003"
+        android:textSize="44px"
+        app:layout_marginLeftPercent="14%"
+        app:layout_marginTopPercent="6%"
+        app:layout_widthPercent="81%" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="场所名称"
+        android:textSize="28px"
+        app:layout_marginLeftPercent="22%"
+        app:layout_marginTopPercent="28%"
+        app:layout_widthPercent="16%" />
+
+
+    <EditText
+        android:id="@+id/ed_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:hint="场所名称"
+        android:textSize="28px"
+        app:layout_marginLeftPercent="36%"
+        app:layout_marginTopPercent="25%"
+        app:layout_widthPercent="46%" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="计算单元保护面积（m2）"
+        android:textSize="28px"
+        app:layout_marginLeftPercent="22%"
+        app:layout_marginTopPercent="42%"
+        app:layout_widthPercent="41%" />
+
+    <EditText
+        android:id="@+id/ed_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:hint="保护面积"
+        android:inputType="numberDecimal"
+        android:textSize="31px"
+        app:layout_marginLeftPercent="59.7%"
+        app:layout_marginTopPercent="37%"
+        app:layout_widthPercent="22.6%" />
+
+    <Button
+        android:id="@+id/bt_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示结果"
+        android:textSize="24px"
+        app:layout_marginLeftPercent="37%"
+        app:layout_marginTopPercent="48.7%"
+        app:layout_widthPercent="26%" />
+
+    <TextView
+        android:id="@+id/tv_result1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#04a300"
+        android:textSize="25px"
+        app:layout_marginLeftPercent="22%"
+        app:layout_marginTopPercent="62%"
+        app:layout_widthPercent="59%" />
+
+    <TextView
+        android:id="@+id/tv_result2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#04a300"
+        android:textSize="25px"
+        app:layout_marginLeftPercent="22%"
+        app:layout_marginTopPercent="75%"
+        app:layout_widthPercent="59%" />
+
+    <ListView
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e8149cb7"
+        app:layout_marginLeftPercent="36.5%"
+        app:layout_marginTopPercent="26.8%"
+        app:layout_widthPercent="45%"
+        android:divider="#3d011efc"
+        android:dividerHeight="2dp"/>
+
+    <ImageView
+        android:id="@+id/iv_note"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/note"/>
+
+</support.PercentFrameLayout>
